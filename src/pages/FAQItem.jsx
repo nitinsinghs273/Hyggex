@@ -10,7 +10,7 @@ function FAQItem({ item }) {
   }
 
   return (
-    <div className="p-3 border-2 border-blue-600 text-stone-800 w-[848px] rounded-md font-semibold">
+    <div className="p-3 border-2 border-blue-600 text-stone-800 max-w-[100%] rounded-md font-semibold w-3/5">
       <div
         className="flex justify-between items-center cursor-pointer"
         onClick={toggleShow}
@@ -19,7 +19,7 @@ function FAQItem({ item }) {
         <FontAwesomeIcon icon={show ? faAngleUp : faAngleDown} />
       </div>
       <div
-        className={`transition-all ease-in-out duration-400  ${
+        className={`transition-all ease-in-out duration-400 ${
           show ? "max-h-[500px]" : "max-h-0 overflow-hidden"
         }`}
       >

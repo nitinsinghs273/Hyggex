@@ -38,8 +38,8 @@ export default function StudyCard() {
   };
   return (
     <>
-      <div className="mt-[30px] flex w-[58%] items-center justify-between gap-5 self-center md:w-full md:flex-col">
-        <div className=" rounded-[2.66rem] h-[25rem] w-[44.5rem] bg-gray-400 md:self-stretch gradient-bg">
+      <div className="mt-[30px] flex w-[58%] items-center justify-between gap-5 self-center sm:w-full sm:flex-col">
+        <div className=" rounded-[2.66rem] w-[50%]  bg-gray-400 gradient-bg sm:h-[25rem] sm:w-[44.5rem]">
           <div className="flex w-full justify-between rounded-[42px] bg-gradient p-[34px] sm:px-4 sm:py-5 ">
             <Img
               src="/images/img_frame_gray_100.svg"
@@ -52,18 +52,18 @@ export default function StudyCard() {
               className="h-[34px] w-[34px] rounded-[50%]"
             />
           </div>
-          <div className=" w-full h-auto min-h-60 flex justify-center items-center">
+          <div className=" sm:min-h-60 flex justify-center items-center sm:w-full sm:h-auto sm:p-0">
             <Heading as="h1" className=" text-white text-3xl font-semibold">
               {Data[currentIndex]}
             </Heading>
           </div>
         </div>
       </div>
-      <div className="mt-8 flex w-[50%] items-center justify-between gap-5 self-center md:w-full">
+      <div className="mt-8 flex w-[50%] items-center justify-between gap-5 self-center md:w-full sm:w-11/12">
         <Img
           src="/images/img_vector.png"
           alt="vector"
-          className="h-[30px] w-[30px] object-cover"
+          className="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] object-cover"
           onClick={() => handleRefresh()}
         />
         <div className="flex w-[44%] items-center justify-between gap-5">
